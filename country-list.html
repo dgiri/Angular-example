@@ -1,0 +1,17 @@
+<!-- <ul>
+  <li ng-repeat="country in countries">
+    <a href="#/{{country.id}}">{{country.name}}</a>
+  </li>
+<ul>
+ -->
+Search:<input ng-model="query" type="text"/>
+<table>
+  <tr>
+    <th><a href="" ng-click="sortField = 'name'">Country</a></th>
+    <th><a href="" ng-click="sortField = 'population'">Population</a></th>
+  </tr>
+  <tr ng-repeat="country in countries | filter:query | orderBy:sortField">
+    <td><a href="#/{{country.id}}">{{country.name}}</a></td>
+    <td>{{country.population}}</td>
+  </tr>
+</table>

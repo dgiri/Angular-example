@@ -1,0 +1,17 @@
+[
+  {
+    "name": "China",
+    "id": 1,
+    "population": 1359821000
+  },
+  {
+    "name": "India",
+    "id": 2,
+    "population": 1205625000
+  },
+  {
+    "name": "United States of America",
+    "id": 3,
+    "population": 312247000
+  }
+]
