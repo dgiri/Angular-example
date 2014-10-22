@@ -10,8 +10,6 @@ Search:<input ng-model="query" type="text"/>
     <th><a href="" ng-click="sortField = 'name'">Country</a></th>
     <th><a href="" ng-click="sortField = 'population'">Population</a></th>
   </tr>
-  <tr ng-repeat="country in countries | filter:query | orderBy:sortField">
-    <td><a href="#/{{country.id}}">{{country.name}}</a></td>
-    <td>{{country.population}}</td>
+  <tr ng-repeat="country in countries | filter:query | orderBy:sortField" country="country">
   </tr>
 </table>
